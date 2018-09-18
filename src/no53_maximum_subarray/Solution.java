@@ -20,7 +20,7 @@ public class Solution {
             //1. sum>0,A[i]>0 => sum+A[i] > A[i] 扩展该子数组
             //2. sum<0,A[i]>0 => sum+A[i] < A[i] 不扩展该子数组
             //3. sum<0,A[i]<0 => sum+A[i] < A[i] 不扩展该子数组
-            //4. sum>0,A[i]>0 => sum+A[i] > A[i] 扩展该子数组
+            //4. sum>0,A[i]<0 => sum+A[i] > A[i] 扩展该子数组
             maxEndHere = Math.max(maxEndHere + nums[i],nums[i]);
 
             //确认当前已扩展的子数组的和是否最大
